@@ -2,8 +2,8 @@ class Team
   attr_reader :name
   attr_accessor :players
 
-  def initialize(name, players)
-    @name = name
+  def initialize(players, team_name:)
+    @name = team_name
     @players = []
     players.each do |player|
       @players << player
