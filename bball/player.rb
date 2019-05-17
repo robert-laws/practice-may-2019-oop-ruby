@@ -7,7 +7,7 @@ class Player
   attr_reader :name, :probabilities
   attr_accessor :blocks, :rebounds, :offensive_rebounds, :assists, :shots_taken, :shots_made, :points
 
-  def initialize(name, block, shoot, assist, rebound)
+  def initialize(name:, block:, shoot:, assist:, rebound:)
     @name = name
     @blocks = 0
     @rebounds = 0

@@ -27,6 +27,7 @@ class Team
       if(player.action("shoot"))
         player.shots_taken += 1
         player.shots_made += 1
+        player.points += 2
         # is true
         # made shot - stat
         if(player.action("assist"))
