@@ -2,8 +2,8 @@ require_relative 'player'
 require_relative 'team'
 require_relative 'game'
 
-p1 = Player.new("Bob")
-p2 = Player.new("Kal")
+p1 = Player.new("Bob", 7, 1, 3, 5)
+p2 = Player.new("Kal", 6, 1, 1, 8)
 
 t1 = Team.new("Ducks", [p1])
 
@@ -13,10 +13,9 @@ g = Game.new([t1, t2])
 
 # p g.game_stats
 
-g.play(t1, t1.players[0].shoot)
-g.play(t2, t2.players[0].shoot)
-g.play(t1, t1.players[0].shoot)
-g.play(t2, t2.players[0].shoot)
-
+g.play
+g.play
+p p1
+p p2
 
 p g.game_stats
